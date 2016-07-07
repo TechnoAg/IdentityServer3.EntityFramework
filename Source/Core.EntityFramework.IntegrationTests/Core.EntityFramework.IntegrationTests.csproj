@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoMapper, Version=4.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.4.2.0\lib\net45\AutoMapper.dll</HintPath>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -48,7 +48,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="IdentityServer3, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\IdentityServer3.2.5.0-build00468\lib\net45\IdentityServer3.dll</HintPath>
+      <HintPath>..\packages\IdentityServer3.2.5.0\lib\net45\IdentityServer3.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
@@ -83,7 +83,12 @@
   <ItemGroup>
     <Compile Include="AutomapperTests.cs" />
     <Compile Include="ClientConfigurationDbContextTests.cs" />
+    <Compile Include="OperationalConfigurationDbContextTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stores\AuthorizationCodeStoreTests.cs" />
+    <Compile Include="Stores\RefreshTokenStoreTests.cs" />
+    <Compile Include="Stores\TokenHandleStoreTests.cs" />
+    <Compile Include="Stores\TokenStoreTestsBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
